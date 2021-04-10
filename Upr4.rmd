@@ -54,7 +54,7 @@ mypalette <-colorRampPalette(c('whitesmoke', 'coral3'))
 
 # Строим карту
 spplot(Regions, 'statistic', col.regions = mypalette(16),
-       col = 'coral4', main = 'Число персональных компьютеров, используемых в учебных целях\nобщеобразовательные учреждения',
+       col = 'coral4', main = 'Использованеи свежей воды в СЗФО',
        panel = function(x, y, z, subscripts, ...){
          panel.polygonsplot(x, y, z, subscripts, ...)
          sp.text(coordinates(Regions),
